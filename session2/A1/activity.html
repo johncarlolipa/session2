@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Activity</title>
+</head>
+<body>
+    <h1>Boxes Order Form</h1>
+    <br>
+    <br>
+        <form action="" style="border: 1px solid black; padding: 20px; width: 25%">
+            <div>
+            <label for="">Name:</label>
+            <input type="text">
+            </div>
+            <br>
+            <br>
+            <div>
+            <label for="">Email:</label>
+            <input type="text">
+        </div>
+            <br>
+            <br>
+            <div>
+            <label for="">Address:</label>
+            <textarea cols="20" rows="3"></textarea>
+            </div>
+        </form>
+
+    <br>
+    <br>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Part Number</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Subtotal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Econo Box</td>
+                <td>LB100</td>
+                <td><input type="number" value="0"></td>
+                <td>R5</td>
+                <td><input type="number" value="0"></td>
+            </tr>
+            <tr>
+                <td>Standard Box</td>
+                <td>LB200</td>
+                <td><input type="number" value="0"></td>
+                <td>R10</td>
+                <td><input type="number" value="0"></td>
+            </tr>
+            <tr>
+                <td>Premium Box</td>
+                <td>LB300</td>
+                <td><input type="number" value="0"></td>
+                <td>R15</td>
+                <td><input type="number" value="0"></td>
+            </tr>
+            <tr>
+                <td>Deluxe Box</td>
+                <td>LB400</td>
+                <td><input type="number" value="0"></td>
+                <td>R20</td>
+                <td><input type="number" value="0"></td>
+            </tr>
+            <tr>
+                <td>Super Deluxe Box</td>
+                <td>LB500</td>
+                <td><input type="number" value="0"></td>
+                <td>R30</td>
+                <td><input type="number"></td>
+            </tr>
+                <td colspan="3" align="right">Total:<td>
+                <td><input type="number" value="0"></td>
+        </tbody>
+
+        <br>
+        <br>
+        <br>
+
+    </table>
+
+
+    <br>
+    <br>
+
+    <h1>Credit Card Details</h1>
+    <table border="2">
+        <tbody>
+            <tr>
+                <td colspan="2">Card Type:</td>
+            </tr>
+            <tr>
+                <td><input type="radio">MasterCard</td>
+                <td>Card Number:</td>
+                <td><input id="ccn" type="number" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="16"></td>
+            </tr>
+            <tr>
+                <td><input type="radio">
+                    Visa</td>
+                <td>Expiry Date:</td>
+                <td><input type="text" maxlength="5" value="mm/yy"></td>
+            </tr>
+            <tr>
+                <td><input type="radio">American Express</td>
+            </tr>
+            <tr>
+                <td>Dinners Club</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <button type="submit">Send order</button> 
+    <button type="submit">Clear Form</button>
+
+
+
+</body>
+</html>
